@@ -13,6 +13,7 @@ header{
     background-image: url(../image/photo/Rectangle1copy2.svg), url(../image/photo/test.png);
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 370px;
 }
 .icon_text {
     display: flex;
@@ -64,6 +65,9 @@ header{
     background-color: transparent;
     justify-content: center;
     align-items: center;
+
+/* Удалить нижний цвет */
+    color: red;
 
     -moz-user-select: none;
     -khtml-user-select: none;

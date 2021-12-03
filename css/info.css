@@ -109,6 +109,7 @@
     }
     .content{
         min-width: 370px;
+        background-image: url(../image/photo/Rectangle1copy2.svg), url(../image/photo/test.png);
     }
     .video{
         display: flex;

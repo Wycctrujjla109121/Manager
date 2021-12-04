@@ -1,0 +1,110 @@
+.easy_useful_content_body{
+    background-color: #fff;
+}
+.easy_useful_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.easy_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+}
+.easy_label {
+    font-size: 45px;
+    font-family: RegularSemiBold;
+    color: #061e37;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 25px;
+}
+.easy_text {
+    font-size: 25px;
+    font-family: RegularSemiBold;
+    color: #b0bec5;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 25px;
+}
+.easy_parag {
+    display: flex;
+    align-self: center;
+    max-width: 560px;
+    font-size: 15px;
+    font-family: RalewayRegular;
+    color: #b0bec5;
+    line-height: 25px;
+}
+.easy_content {
+    display: flex;
+    flex-direction: row;
+}
+.easy_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.easy_image{
+
+}
+.easy_image{
+    margin-bottom: 30px;
+    height: 80px;
+}
+.easy_image image{
+    width: 100%;
+}
+.easy_info_title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: RegularSemiBold;
+    color: #061e37;
+}
+.easy_info_parag {
+    max-width: 350px;
+    margin: 0px 30px;
+    color: #b7c4ca;
+    font-size: 15px;
+    font-family: RalewayRegular;
+    line-height: 20px;
+}
+.get_started{
+    display: flex;
+    justify-content: center;
+}
+.get_started button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 80px 0px 100px 0px;
+    background-color: #1de9b6;
+    font-size: 15px;
+    color: #f0fefa;
+    text-transform: uppercase;
+    font-family: RalewayBold;
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.get_started button:active{
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: rgb(255, 0, 55);
+}
+
+@media screen and (max-width: 700px) {
+    .easy_content{
+        flex-direction: column;
+    }
+    .easy_block{
+        margin-bottom: 30px;
+    }
+    .easy_block:last-child{
+        margin-bottom: 0px;
+    }
+}

@@ -66,9 +66,6 @@ header{
     justify-content: center;
     align-items: center;
 
-/* Удалить нижний цвет */
-    color: red;
-
     -moz-user-select: none;
     -khtml-user-select: none;
     user-select: none; 

@@ -115,11 +115,23 @@
 
 @media screen and (max-width:1000px) {
     .info_all{
-        min-width: 600px;
+        min-width: 700px;
+    }
+    .info_business{
+        min-width: 25%;
+    }
+    .info_download{
+        min-width: 25%;
+    }
+    .info_free_install{
+        min-width: 25%;
+    }
+    .info_pro_users{
+        min-width: 25%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .info_all_block{
         display: flex;
         flex-direction: column;
@@ -128,5 +140,17 @@
         width: 100%;
         min-width: 100%;
         max-width: 100%;
+    }
+    .info_business{
+        min-height: 100px;
+    }
+    .info_download{
+        min-height: 100px;
+    }
+    .info_free_install{
+        min-height: 100px;
+    }
+    .info_pro_users{
+        min-height: 100px;
     }
 }

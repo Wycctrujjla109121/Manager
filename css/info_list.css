@@ -1,0 +1,132 @@
+.info_width {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.info_blue {
+    background-color: #80d8ff;
+    width: 100%;
+}
+.info_all {
+    min-width: 1440px;
+}
+.info_purple {
+    background-color: #ea80fc;
+    width: 100%;
+}
+.info_block_business{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url(../image/icon/business.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+.info_business{
+    display: flex;
+    background-color: #80d8ff;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.info_all_block{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.info_block_download {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url(../image/icon/download.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    margin-right: 20px;
+}
+.info_download{
+    display: flex;
+    flex-direction: row;
+    background-color: #82b1ff;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.info_block_download_collumn{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.info_block_install{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url(../image/icon/Install.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    margin-right: 20px;
+}
+.info_free_install{
+    display: flex;
+    align-items: center;
+    background-color: #b388ff;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.info_pro_users {
+    display: flex;
+    align-items: center;
+    background-color: #ea80fc;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.info_block_users {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    background-image: url(../image/icon/ProUsers.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.collumn_info{
+    width: 70px;
+}
+
+@media screen and (max-width:1400px) {
+    .info_all{
+        min-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .info_all{
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info_all_block{
+        display: flex;
+        flex-direction: column;
+    }
+    .info_all{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

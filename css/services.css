@@ -7,7 +7,7 @@
     margin: 0 auto;
     max-width: 1440px;
     text-align: center;
-    /* border: 1px solid red; */
+    min-width: 450px;
 }
 .services_label {
     font-size: 50px;
@@ -15,6 +15,7 @@
     color: #061e37;
 }
 .services_text {
+    margin: 0px 30px;
     display: flex;
     align-self: center;
     font-size: 15px;

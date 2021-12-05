@@ -15,7 +15,6 @@
     color: #061e37;
 }
 .services_text {
-    margin: 0px 30px;
     display: flex;
     align-self: center;
     font-size: 15px;
@@ -24,4 +23,6 @@
     max-width: 555px;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }

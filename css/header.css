@@ -1,4 +1,3 @@
-
 header{
     display: flex;
     flex-direction: row;
@@ -8,12 +7,16 @@ header{
     height: 80px;
     align-items: flex-end;
     color: #ffffff;
+    min-width: 400px;
 }
 .content{
     background-image: url(../image/photo/Rectangle1copy2.svg), url(../image/photo/test.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 370px;
+    min-width: 450px;
+    overflow-x: hidden;
+    padding: 0px 30px;
+
 }
 .icon_text {
     display: flex;

@@ -1,0 +1,26 @@
+.services_bgc{
+    background-color: #fff;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1440px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.services_label {
+    font-size: 50px;
+    font-family: RegularSemiBold;
+    color: #061e37;
+}
+.services_text {
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+    font-family: RalewayRegular;
+    color: #c0cbd1;
+    max-width: 555px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

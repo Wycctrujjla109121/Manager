@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+    min-width: 450px;
 }
 .info_blue {
     background-color: #80d8ff;
@@ -10,6 +11,10 @@
 }
 .info_all {
     min-width: 1440px;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
 }
 .info_purple {
     background-color: #ea80fc;
@@ -102,9 +107,19 @@
     align-self: center;
     margin-right: 20px;
 }
-
 .collumn_info{
-    width: 70px;
+    width: 130px;
+}
+.info_block_label{
+    font-size: 20px;
+    color: #fff;
+    font-family: RalewayExtraBold;
+    margin-bottom: 5px;
+}
+.info_block_text{
+    font-size: 20px;
+    color: #fff;
+    font-family: RalewayExtraBold;
 }
 
 @media screen and (max-width:1400px) {
@@ -115,42 +130,30 @@
 
 @media screen and (max-width:1000px) {
     .info_all{
-        min-width: 700px;
+        min-width: 100%;
+    }
+    .info_all_block{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info_purple{
+        display: none;
+    }
+    .info_blue{
+        display: none;
     }
     .info_business{
-        min-width: 25%;
+        height: 100px;
     }
     .info_download{
-        min-width: 25%;
+        height: 100px;
     }
     .info_free_install{
-        min-width: 25%;
+        height: 100px;
     }
     .info_pro_users{
-        min-width: 25%;
+        height: 100px;
     }
 }
 
-@media screen and (max-width: 700px) {
-    .info_all_block{
-        display: flex;
-        flex-direction: column;
-    }
-    .info_all{
-        width: 100%;
-        min-width: 100%;
-        max-width: 100%;
-    }
-    .info_business{
-        min-height: 100px;
-    }
-    .info_download{
-        min-height: 100px;
-    }
-    .info_free_install{
-        min-height: 100px;
-    }
-    .info_pro_users{
-        min-height: 100px;
-    }
-}

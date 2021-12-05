@@ -6,12 +6,13 @@
     flex-direction: column;
     max-width: 1440px;
     margin: 0 auto;
+    min-width: 450px;
 }
 .easy_title {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 100px 0px 100px 0px;
+    margin: 100px 30px 100px 30px;
 }
 .easy_label {
     font-size: 45px;
@@ -52,9 +53,6 @@
     width: 100%;
 }
 .easy_image{
-
-}
-.easy_image{
     margin-bottom: 30px;
     height: 80px;
 }
@@ -90,6 +88,10 @@
     text-transform: uppercase;
     font-family: RalewayBold;
     box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
 }
 .get_started button:active{
     transition: 0.3s;

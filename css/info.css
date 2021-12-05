@@ -116,7 +116,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 456px) {
     .info_button_row button:last-child{
         margin: 30px 0px 30px 0px;
     }

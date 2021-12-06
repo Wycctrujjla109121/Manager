@@ -12,7 +12,8 @@ header{
 .content{
     background-image: url(../image/photo/Rectangle1copy2.svg), url(../image/photo/test.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 600%;
     min-width: 450px;
     overflow-x: hidden;
     padding: 0px 30px;

@@ -100,7 +100,6 @@
     height: inherit;
     object-fit:contain;
     z-index: 2;
-    border: 1px solid red;
 }
 .video label{
     position: relative;

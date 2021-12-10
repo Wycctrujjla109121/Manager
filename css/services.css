@@ -1,13 +1,16 @@
 .services_bgc{
+    display: flex;
+    min-width: 450px;
     background-color: #fff;
+    justify-content: center;
+    height: 870px;
 }
 .services {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     max-width: 1440px;
-    text-align: center;
     min-width: 450px;
+    text-align: center;
 }
 .services_label {
     font-size: 50px;
@@ -25,4 +28,78 @@
     margin-bottom: 50px;
     margin-left: 30px;
     margin-right: 30px;
+}
+
+.statistick_collumn{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+}
+.statistick {
+    max-width: 800px;
+    align-self: center;
+    min-width: 390px;
+    overflow: hidden;
+    height: 50px;
+    margin: 0px 30px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.statistick_header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.statistick_name {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.statistick_name img{
+    margin-left: 25px;
+}
+.staistick_label {
+    margin-left: 25px;
+    font-size: 15px;
+    font-family: RalewayBold;
+    color: rgb(6, 30, 55);
+}
+.statistick_header img{
+    margin-right: 25px;
+}
+.statistick_block {
+    display: flex;
+    margin: 0px 25px;
+    align-items: center;
+}
+.statistick_img img{
+    width: 250px;
+    height: 150px;
+}
+.statistick_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    margin-left: 25px;
+    height: 140px;
+    font-size: 15px;
+    font-family: RalewayRegular;
+    color: rgb(6, 30, 55);
+    line-height: 1.667;
+    /* border: 1px solid red; */
+}
+
+.statistick:hover{
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    height: 220px;
+    transition: 1s;
+}
+
+.statistick:last-child{
+    margin-bottom: 0px;
 }

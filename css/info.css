@@ -88,7 +88,8 @@
 .video button{
     position: absolute;
     background-position: center;
-    background-image:url(../image/photo/play_arrow.png), url(../image/photo/play_moution.png), url(../image/photo/Rounded_BG.png) ,url(../image/photo/Rounded_2.png);
+    background-image:url(../image/photo/play_arrow.png), url(../image/photo/play_moution.png), 
+    url(../image/photo/Rounded_BG.png) ,url(../image/photo/Rounded_2.png);
     background-repeat: no-repeat;
     background-position: center 45%;
     background-color: transparent;  

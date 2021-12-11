@@ -155,6 +155,7 @@
     .customers_label{
         margin: 0px 30px;
         text-align: center;
+        margin-top: 50px;
     }
     .customers_text{
         margin: 30px 30px 50px 30px;
@@ -172,7 +173,7 @@
     }
     .customers{
         max-height:unset;
-        height: 1150px;
+        height: 1300px;
     }
     .reviews{
         height: 2000px;
@@ -189,7 +190,7 @@
         justify-content: space-between;
     }
     .customers{
-        height: 1390px;
+        height: 1450px;
     }
     .reviews_button button:first-child{
         margin-bottom: 15px;

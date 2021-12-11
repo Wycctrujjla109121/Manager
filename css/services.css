@@ -11,6 +11,10 @@
     min-width: 450px;
     text-align: center;
     margin-bottom: 100px;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none; 
 }
 .services_label {
     font-size: 50px;

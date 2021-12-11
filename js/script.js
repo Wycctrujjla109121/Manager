@@ -28,197 +28,103 @@ function videoSeeking(){
     document.getElementById("btnPlay").style.visibility = "hidden";
 }
 
-
-// Даём всем вкладкам SERVICE стандартный размер в 50px
-document.getElementById('statistickId').style.height = "50px"
-document.getElementById('inboxId').style.height = "50px"
-document.getElementById('teamId').style.height = "50px"
-document.getElementById('settingsId').style.height = "50px"
-document.getElementById('feedId').style.height = "50px"
+//Раскрывает определённый эллемент SERVICES с первого по 5
+//Эллемент SERVICE 1
+document.getElementById('statistickId').style.width = "100%";
 document.getElementById('statistickId').addEventListener('click', statistickClick, true);
-
-//Даёт отступы всем выезжаящим спискам 
-document.getElementById('statistickCollumnId').style.margin = "0px 30px 0px 30px"
-document.getElementById("statistickId").style.width = "100%";
-document.getElementById("inboxId").style.width = "100%"
-document.getElementById("teamId").style.width = "100%"
-document.getElementById("settingsId").style.width = "100%"
-document.getElementById("feedId").style.width = "100%"
-
-
-//Откртие вкладок SRVICES с помощью JS
-document.getElementById('statistickId').addEventListener("click", statistickClick, true);
 function statistickClick(){
-    if (document.getElementById('statistickId').style.height == "50px")
+    if (window.matchMedia('max-width: 832px') && document.getElementById('statistickId').classList.contains('statistick_hover') != true)
     {
-        if (window.screen.width >= 835)
-        {
-            document.getElementById('statistickId').style.height = "220px";
+        document.getElementById('statistickId').classList.add('statistick_hover');
 
-        }
-        else if (window.screen.width <= 832 && window.screen.width > 744)
-        {
-            document.getElementById('statistickId').style.height = "250px"
-            
-        }
-        else if (window.screen.width <= 744 && window.screen.width > 633) 
-        {
-            document.getElementById('statistickId').style.height = "380px";
-            document.getElementById('statistickTextId').style.maxWidth = "200px"
-        }
-        else
-        {
-            document.getElementById('statistickId').style.height = "450px"
-            document.getElementById('statistickTextId').style.maxWidth = "320px"
-        }
+        document.getElementById('inboxId').classList.remove('statistick_hover');
+        document.getElementById('teamId').classList.remove('statistick_hover');
+        document.getElementById('settingsId').classList.remove('statistick_hover');
+        document.getElementById('feedId').classList.remove('statistick_hover');
     }
-    else
+    else if (document.getElementById('statistickId').classList.contains('statistick_hover') == true)
     {
-        document.getElementById('statistickId').style.height = "50px"
+        document.getElementById('statistickId').classList.remove('statistick_hover');
+        document.getElementById('statistickId').style.width = "100%";
     }
-    document.getElementById("inboxId").style.height = "50px"
-    document.getElementById("teamId").style.height = "50px"
-    document.getElementById("settingsId").style.height = "50px"
-    document.getElementById("feedId").style.height = "50px"
 }
 
-document.getElementById('inboxId').addEventListener("click", inboxClick, true);
+//Эллемент SERVICE 2
+document.getElementById('inboxId').style.width = "100%";
+document.getElementById('inboxId').addEventListener('click', inboxClick, true);
 function inboxClick(){
-    if (document.getElementById('inboxId').style.height == "50px")
+    if (window.matchMedia('max-width: 832px') && document.getElementById('inboxId').classList.contains('statistick_hover') != true)
     {
-        if (window.screen.width >= 835)
-        {
-            document.getElementById('inboxId').style.height = "220px";
+        document.getElementById('inboxId').classList.add('statistick_hover');
 
-        }
-        else if (window.screen.width <= 832 && window.screen.width > 744)
-        {
-            document.getElementById('inboxId').style.height = "250px"
-            
-        }
-        else if (window.screen.width <= 744 && window.screen.width > 633) 
-        {
-            document.getElementById('inboxId').style.height = "380px";
-            document.getElementById('inboxTextId').style.maxWidth = "200px"
-            console.log("work")
-        }
-        else
-        {
-            document.getElementById('inboxId').style.height = "450px"
-            document.getElementById('inboxTextId').style.maxWidth = "320px"
-        }
+        document.getElementById('statistickId').classList.remove('statistick_hover');
+        document.getElementById('teamId').classList.remove('statistick_hover');
+        document.getElementById('settingsId').classList.remove('statistick_hover');
+        document.getElementById('feedId').classList.remove('statistick_hover');
     }
     else
     {
-        document.getElementById('inboxId').style.height = "50px"
+        document.getElementById('inboxId').classList.remove('statistick_hover');
+        document.getElementById('inboxId').style.width = "100%";
     }
-    document.getElementById("statistickId").style.height = "50px"
-    document.getElementById("teamId").style.height = "50px"
-    document.getElementById("settingsId").style.height = "50px"
-    document.getElementById("feedId").style.height = "50px"
 }
 
-document.getElementById('teamId').addEventListener("click", teamClick, true);
+//Эллемент SERVICE 3
+document.getElementById('teamId').style.width = "100%";
+document.getElementById('teamId').addEventListener('click', teamClick, true);
 function teamClick(){
-    if (document.getElementById('teamId').style.height == "50px")
+    if (window.matchMedia('max-width: 832px') && document.getElementById('teamId').classList.contains('statistick_hover') != true)
     {
-        if (window.screen.width >= 835)
-        {
-            document.getElementById('teamId').style.height = "220px";
+        document.getElementById('teamId').classList.add('statistick_hover');
 
-        }
-        else if (window.screen.width <= 832 && window.screen.width > 744)
-        {
-            document.getElementById('teamId').style.height = "250px"
-            
-        }
-        else if (window.screen.width <= 744 && window.screen.width > 633) 
-        {
-            document.getElementById('teamId').style.height = "380px";
-            document.getElementById('teamIdText').style.maxWidth = "200px"
-        }
-        else
-        {
-            document.getElementById('teamId').style.height = "450px"
-            document.getElementById('teamIdText').style.maxWidth = "320px"
-        }
+        document.getElementById('statistickId').classList.remove('statistick_hover');
+        document.getElementById('inboxId').classList.remove('statistick_hover');
+        document.getElementById('settingsId').classList.remove('statistick_hover');
+        document.getElementById('feedId').classList.remove('statistick_hover');
     }
     else
     {
-        document.getElementById('teamId').style.height = "50px"
+        document.getElementById('teamId').classList.remove('statistick_hover');
+        document.getElementById('teamId').style.width = "100%";
     }
-    document.getElementById("inboxId").style.height = "50px"
-    document.getElementById("statistickId").style.height = "50px"
-    document.getElementById("settingsId").style.height = "50px"
-    document.getElementById("feedId").style.height = "50px"
 }
 
-document.getElementById('settingsId').addEventListener("click", settingsClick, true);
+//Эллемент SERVICE 4
+document.getElementById('settingsId').style.width = "100%";
+document.getElementById('settingsId').addEventListener('click', settingsClick, true);
 function settingsClick(){
-    if (document.getElementById('settingsId').style.height == "50px")
+    if (window.matchMedia('max-width: 832px') && document.getElementById('settingsId').classList.contains('statistick_hover') != true)
     {
-        if (window.screen.width >= 835)
-        {
-            document.getElementById('settingsId').style.height = "220px";
+        document.getElementById('settingsId').classList.add('statistick_hover');
 
-        }
-        else if (window.screen.width <= 832 && window.screen.width > 744)
-        {
-            document.getElementById('settingsId').style.height = "250px"
-            
-        }
-        else if (window.screen.width <= 744 && window.screen.width > 633) 
-        {
-            document.getElementById('settingsId').style.height = "380px";
-            document.getElementById('statistickIdText').style.maxWidth = "200px"
-        }
-        else
-        {
-            document.getElementById('settingsId').style.height = "450px"
-            document.getElementById('statistickIdText').style.maxWidth = "320px"
-        }
+        document.getElementById('statistickId').classList.remove('statistick_hover');
+        document.getElementById('inboxId').classList.remove('statistick_hover');
+        document.getElementById('teamId').classList.remove('statistick_hover');
+        document.getElementById('feedId').classList.remove('statistick_hover');
     }
     else
     {
-        document.getElementById('settingsId').style.height = "50px"
+        document.getElementById('settingsId').classList.remove('statistick_hover');
+        document.getElementById('settingsId').style.width = "100%";
     }
-    document.getElementById("inboxId").style.height = "50px"
-    document.getElementById("teamId").style.height = "50px"
-    document.getElementById("statistickId").style.height = "50px"
-    document.getElementById("feedId").style.height = "50px"
 }
 
-document.getElementById('feedId').addEventListener("click", feedClick, true);
+//Эллемент SERVICE 5
+document.getElementById('feedId').style.width = "100%";
+document.getElementById('feedId').addEventListener('click', feedClick, true);
 function feedClick(){
-    if (document.getElementById('feedId').style.height == "50px")
+    if (window.matchMedia('max-width: 832px') && document.getElementById('feedId').classList.contains('statistick_hover') != true)
     {
-        if (window.screen.width >= 835)
-        {
-            document.getElementById('feedId').style.height = "220px";
+        document.getElementById('feedId').classList.add('statistick_hover');
 
-        }
-        else if (window.screen.width <= 832 && window.screen.width > 744)
-        {
-            document.getElementById('feedId').style.height = "250px"
-            
-        }
-        else if (window.screen.width <= 744 && window.screen.width > 633) 
-        {
-            document.getElementById('feedId').style.height = "380px";
-            document.getElementById('feedIdText').style.maxWidth = "200px"
-        }
-        else
-        {
-            document.getElementById('feedId').style.height = "450px"
-            document.getElementById('feedIdText').style.maxWidth = "320px"
-        }
+        document.getElementById('statistickId').classList.remove('statistick_hover');
+        document.getElementById('inboxId').classList.remove('statistick_hover');
+        document.getElementById('teamId').classList.remove('statistick_hover');
+        document.getElementById('settingsId').classList.remove('statistick_hover');
     }
     else
     {
-        document.getElementById('feedId').style.height = "50px"
+        document.getElementById('feedId').classList.remove('statistick_hover');
+        document.getElementById('feedId').style.width = "100%";
     }
-    document.getElementById("inboxId").style.height = "50px"
-    document.getElementById("teamId").style.height = "50px"
-    document.getElementById("settingsId").style.height = "50px"
-    document.getElementById("statistickId").style.height = "50px"
 }

@@ -51,6 +51,9 @@
     transition: 1s;
     margin-bottom: 20px;
 }
+.statistick_hover{
+    height: 220px;
+}
 .statistick_header {
     display: flex;
     justify-content: space-between;
@@ -102,6 +105,15 @@
     margin-bottom: 0px;
 }
 
+@media screen and (max-width: 832px) {
+    .statistick_hover{
+        height: 350px;
+    }
+    .statistick_text{
+        max-width: 240px;
+    }
+}
+
 @media screen and (max-width: 633px) {
     .statistick_block{
         display: flex;
@@ -109,5 +121,17 @@
     }
     .statistick_block img{
         margin-bottom: 30px;
+    }
+    .statistick_collumn{
+        margin: 0px 30px 0px 30px;
+    }
+    .statistick{
+        width: 100%;
+    }
+    .statistick_hover{
+        height: 450px;
+    }
+    .statistick_text{
+        max-width: 350px;
     }
 }

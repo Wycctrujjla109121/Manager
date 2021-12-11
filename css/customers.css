@@ -1,0 +1,179 @@
+.customers {
+    display: flex;
+    justify-content: center;
+    background-image: url(../image/photo/reviews_bg_2.png), url(../image/photo/reviews_bg_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 450px;
+    height: 700px;
+}
+.customers_block {
+    display: flex;
+    max-width: 1440px;
+    min-width: 450px;
+    max-height: 650px;
+    max-height: 700px;
+    overflow: hidden;
+}
+.customers_info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 450px;
+    width: 100%;
+}
+.customers_label {
+    font-size: 45px;
+    font-family: RegularSemiBold;
+    max-width: 450px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+.customers_text {
+    font-size: 15px;
+    font-family: RegularSemiBold;
+    max-width: 460px;
+    margin-bottom: 80px;
+    color: rgb(255, 255, 255);
+    line-height: 1.667;
+}
+.customers_btn button{
+    font-size: 15px;
+    border: 1px solid rgb(6, 30, 55);
+    border-radius: 5px;
+    background-color: rgb(6, 30, 55);
+    color: #fff;
+    width: 150px;
+    height: 55px;
+    text-transform: uppercase;
+    font-family: RalewayBold;
+}
+.customers_btn button:active{
+    transition: 0.5s;
+    color: rgb(6, 30, 55);;
+    background-color: #fff;
+}
+.customers_btn button:hover{
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+.customers_reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    margin-left: 30px;
+}
+.reviews_all{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+}
+.reviews_button button{
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    align-content: right;
+}
+.reviews_button img{
+    margin-left: 100px;
+}
+.reviews_button button:active{
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+.reviews_info{
+    display: flex;
+}
+.reviews{
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+}
+.reviews_img {
+    margin-right: 50px;
+    align-self: center;
+    justify-content: center;
+}
+.reviews_block {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-right: 30px;
+}
+.reviews_label {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: RalewayBold;
+    color: #061e37;
+}
+.reviews_text {
+    font-size: 15px;
+    color: rgb(120, 144, 156);
+    line-height: 1.667;
+    font-family: RalewayRegular;
+}
+
+.review_label_text{
+    margin: 35px 60px 30px 35px;
+}
+
+@media screen and (max-width: 1087px) {
+    .customers_block{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+    .customers_info{
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .customers_label{
+        margin: 0px 30px;
+        text-align: center;
+    }
+    .customers_text{
+        margin: 30px 30px 50px 30px;
+        text-align: justify;
+    }
+    .customers_reviews{
+        margin: 0px;
+        height: 100%;
+    }
+    .reviews_button img{
+        margin: 0px;
+    }
+    .reviews_all{
+        margin-bottom: 50px;
+    }
+    .customers{
+        max-height:unset;
+        height: 1150px;
+    }
+    .reviews{
+        height: 2000px;
+    }
+}
+
+@media screen and (max-width: 605px){
+    .customers_reviews{
+        height: 800px;
+    }
+    .reviews_all{
+        height: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+    .customers{
+        height: 1390px;
+    }
+    .reviews_button button:first-child{
+        margin-bottom: 15px;
+    }
+    .reviews_button button:last-child{
+        margin-top: 15px;
+    }
+}

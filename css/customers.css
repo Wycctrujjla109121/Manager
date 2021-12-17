@@ -118,7 +118,7 @@
     user-select: none; 
 }
 .reviews_button button{
-    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .reviews_button button:active{
     transition: 0.3s;

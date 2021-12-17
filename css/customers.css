@@ -124,6 +124,9 @@
     transition: 0.3s;
     transform: scale(0.9);
 }
+.reviews_button:last-child{
+    visibility: hidden;
+}
 .reviews_info{
     display: flex;
 }

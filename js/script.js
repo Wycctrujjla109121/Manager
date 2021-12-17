@@ -122,7 +122,11 @@ function feedClick() {
 //Навигация отзывов кнопкой вверх
 document.querySelector('#reviewBtnUp').addEventListener('click', reviewBtnUp, true);
 
+
 function reviewBtnUp() {
+        document.querySelector('#reviewBtnDown').style.opacity = "1";
+        document.querySelector('#reviewBtnDown').style.transition = "0.5s";
+        document.querySelector('#reviewBtnDown').style.visibility = "visible";
     if (window.screen.width > "1163") {
 
         if (document.getElementById('reviewInfo1').style.marginTop == "20px" || document.getElementById('reviewInfo1').style.marginTop == "") {
@@ -130,6 +134,9 @@ function reviewBtnUp() {
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-500px") {
             document.getElementById('reviewInfo1').style.marginTop = "-1000px";
+            document.querySelector('#reviewBtnUp').style.opacity = "0";
+            document.querySelector('#reviewBtnUp').style.transition = "0.5s";
+            document.querySelector('#reviewBtnUp').style.visibility = "hidden";
         }
     }
     else if (window.screen.width < "1163" && window.screen.width > "605")
@@ -139,6 +146,9 @@ function reviewBtnUp() {
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-500px") {
             document.getElementById('reviewInfo1').style.marginTop = "-1000px";
+            document.querySelector('#reviewBtnUp').style.opacity = "0";
+            document.querySelector('#reviewBtnUp').style.transition = "0.5s";
+            document.querySelector('#reviewBtnUp').style.visibility = "hidden";
         }
     }
     else if (window.screen.width <="605")
@@ -148,6 +158,9 @@ function reviewBtnUp() {
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-800px") {
             document.getElementById('reviewInfo1').style.marginTop = "-1650px";
+            document.querySelector('#reviewBtnUp').style.opacity = "0";
+            document.querySelector('#reviewBtnUp').style.transition = "0.5s";
+            document.querySelector('#reviewBtnUp').style.visibility = "hidden";
         }
     }
     document.querySelector('.reviews_info').style.transition = "1s";
@@ -157,31 +170,46 @@ function reviewBtnUp() {
 document.querySelector('#reviewBtnDown').addEventListener('click', reviewBtnDown, true);
 
 function reviewBtnDown() {
+        document.querySelector('#reviewBtnUp').style.opacity = "1";
+        document.querySelector('#reviewBtnUp').style.transition = "0.5s";
+        document.querySelector('#reviewBtnUp').style.visibility = "visible";
     if (window.screen.width > "1163") {
 
         if (document.getElementById('reviewInfo1').style.marginTop == "-500px") {
             document.getElementById('reviewInfo1').style.marginTop = "20px";
+            document.querySelector('#reviewBtnDown').style.opacity = "0";
+            document.querySelector('#reviewBtnDown').style.transition = "0.5s";
+            document.querySelector('#reviewBtnDown').style.visibility = "hidden";
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-1000px") {
             document.getElementById('reviewInfo1').style.marginTop = "-500px";
+            
         }
     }
     else if (window.screen.width < "1163" && window.screen.width > "605")
     {
         if (document.getElementById('reviewInfo1').style.marginTop == "-500px" || document.getElementById('reviewInfo1').style.marginTop == "") {
             document.getElementById('reviewInfo1').style.marginTop = "20px";
+            document.querySelector('#reviewBtnDown').style.opacity = "0";
+            document.querySelector('#reviewBtnDown').style.transition = "0.5s";
+            document.querySelector('#reviewBtnDown').style.visibility = "hidden";
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-1000px") {
             document.getElementById('reviewInfo1').style.marginTop = "-500px";
+            
         }
     }
     else if (window.screen.width <="605")
     {
         if (document.getElementById('reviewInfo1').style.marginTop == "-800px" || document.getElementById('reviewInfo1').style.marginTop == "") {
             document.getElementById('reviewInfo1').style.marginTop = "20px";
+            document.querySelector('#reviewBtnDown').style.opacity = "0";
+            document.querySelector('#reviewBtnDown').style.transition = "0.5s";
+            document.querySelector('#reviewBtnDown').style.visibility = "hidden";
         }
         else if (document.getElementById('reviewInfo1').style.marginTop == "-1650px") {
             document.getElementById('reviewInfo1').style.marginTop = "-800px";
+            
         }
     }
     document.querySelector('.reviews_info').style.transition = "1s";

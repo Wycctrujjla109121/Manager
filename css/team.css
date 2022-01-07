@@ -1,0 +1,128 @@
+.our_team {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-bottom: 90px;
+    min-width: 450px;
+}
+.team_content {
+    margin-top: 100px;
+    max-width: 1440px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.team_content_text {
+    text-align: center;
+    margin: 0px 30px;
+}
+.team_label {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: RegularSemiBold;
+}
+.team_text {
+    font-size: 15px;
+    color: rgb(176, 190, 197);
+    line-height: 1.667;
+    font-family: RalewayRegular;
+    max-width: 555px;
+    margin: 0 auto;
+}
+.team_collumn {
+    display: flex;
+}
+.team_row {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+}
+.team_row_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}
+.team_info_name {
+    margin-bottom: 20px;
+    font-family: RalewayBold;
+    font-size: 18px;
+}
+.team_info_text {
+    font-size: 15px;
+    color: rgb(144, 164, 174);
+    line-height: 1.667;
+    font-family: RalewayRegular;
+    max-width: 650px;
+    margin: 0px 30px;
+}
+.team_info_social ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.team_info_social li{
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.team_image_row {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    min-width: 450px;
+    justify-content: center;
+}
+.team_image_hidden{
+    align-self: center;
+    transition: 0.5s;
+    opacity: 0.3;
+    transform: scale(0.7);
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+}
+.team_image_visibile{
+    border: 20px solid #fff;
+    box-shadow: 0px 0px 8px 5px rgba(34, 60, 80, 0.2);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+
+.team_text_visibility{
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position: relative;
+    transition: 1s;
+    visibility: visible;
+}
+.team_text_hidden{
+    position: absolute;
+    margin-top: 240px;
+    visibility: hidden;
+}
+
+@keyframes scale {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .team_image_row{
+        flex-wrap: wrap;
+    }
+}

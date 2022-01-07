@@ -123,6 +123,7 @@
 .reviews_button button:active{
     transition: 0.3s;
     transform: scale(0.9);
+    -webkit-tap-highlight-color: transparent;
 }
 .reviews_button:last-child{
     visibility: hidden;

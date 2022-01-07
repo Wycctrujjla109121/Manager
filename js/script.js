@@ -214,3 +214,64 @@ function reviewBtnDown() {
     }
     document.querySelector('.reviews_info').style.transition = "1s";
 }
+
+
+document.querySelector('#teamImage1').addEventListener('click', teamImage1, true);
+
+function teamImage1(){
+    document.querySelector('#teamImage3').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage3').classList.add('team_image_hidden');
+    document.querySelector('#teamImage2').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage2').classList.add('team_image_hidden');
+
+    document.querySelector('#teamImage1').classList.remove('team_image_hidden')
+    document.querySelector('#teamImage1').classList.add('team_image_visibile');
+
+    document.querySelector('#teamText1').classList.remove('team_text_hidden');
+    document.querySelector('#teamText1').classList.add('team_text_visibility');
+
+    document.querySelector('#teamText2').classList.remove('team_text_visibility');
+    document.querySelector('#teamText2').classList.add('team_text_hidden');
+    document.querySelector('#teamText3').classList.remove('team_text_visibility');
+    document.querySelector('#teamText3').classList.add('team_text_hidden');
+}
+
+document.querySelector('#teamImage2').addEventListener('click', teamImage2, true);
+
+function teamImage2(){
+    document.querySelector('#teamImage1').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage1').classList.add('team_image_hidden');
+    document.querySelector('#teamImage3').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage3').classList.add('team_image_hidden');
+
+    document.querySelector('#teamImage2').classList.remove('team_image_hidden')
+    document.querySelector('#teamImage2').classList.add('team_image_visibile');
+
+    document.querySelector('#teamText2').classList.remove('team_text_hidden');
+    document.querySelector('#teamText2').classList.add('team_text_visibility');
+
+    document.querySelector('#teamText1').classList.remove('team_text_visibility');
+    document.querySelector('#teamText1').classList.add('team_text_hidden');
+    document.querySelector('#teamText3').classList.remove('team_text_visibility');
+    document.querySelector('#teamText3').classList.add('team_text_hidden');
+}
+
+document.querySelector('#teamImage3').addEventListener('click', teamImage3, true);
+
+function teamImage3(){
+    document.querySelector('#teamImage1').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage1').classList.add('team_image_hidden');
+    document.querySelector('#teamImage2').classList.remove('team_image_visibile');
+    document.querySelector('#teamImage2').classList.add('team_image_hidden');
+
+    document.querySelector('#teamImage3').classList.remove('team_image_hidden')
+    document.querySelector('#teamImage3').classList.add('team_image_visibile');
+
+    document.querySelector('#teamText3').classList.remove('team_text_hidden');
+    document.querySelector('#teamText3').classList.add('team_text_visibility');
+
+    document.querySelector('#teamText2').classList.remove('team_text_visibility');
+    document.querySelector('#teamText2').classList.add('team_text_hidden');
+    document.querySelector('#teamText1').classList.remove('team_text_visibility');
+    document.querySelector('#teamText1').classList.add('team_text_hidden');
+}
